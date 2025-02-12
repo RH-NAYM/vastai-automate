@@ -3,7 +3,10 @@
 # Update and install necessary packages
 sudo apt update && sudo apt upgrade -y
 
-sudo apt update && sudo apt upgrade -y && sudo apt-get install -y iproute2 libgl1 && sudo apt-get install -y nano wget unzip nvtop git git-lfs
+sudo apt update && sudo apt upgrade -y && sudo apt-get install -y iproute2 libgl1 && sudo apt-get install -y nano wget unzip nvtop git git-lfs && git lfs install
+
+git clone -b dev https://huggingface.co/HawkEyesAI/BAT_Master && cd BAT_Master 
+
 
 # Setup ngrok
 sudo apt update && sudo apt-get install -y build-essential cmake libopenblas-dev liblapack-dev libx11-dev libgtk-3-dev libgl1-mesa-glx libglib2.0-0
