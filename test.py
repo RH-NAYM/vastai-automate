@@ -31,7 +31,7 @@ def main():
         if details['Net_up'] > 300 and details['Driver'] > 300:
             if len(instance_id) < 2:
                 instance_id.append(details['ID'])
-            if len(instance_id) == 2:
+            if len(instance_id) == 1:
                 break  
 
     # Print space-separated IDs (no brackets or quotes)

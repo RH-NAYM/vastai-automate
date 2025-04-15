@@ -2,7 +2,7 @@
 #!/bin/bash
 set -e  # Exit on any error
 
-# Activate Conda environment
+# Activate Conda environment 
 source ~/miniconda3/bin/activate 
 
 # Set API key for VastAI
