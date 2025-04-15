@@ -33,13 +33,13 @@ Before running the script, ensure you have the following installed:
 ```bash
   pip install vastai
 ```
-## 🧪 Usage Example 1 :
+### 🧪 Usage Example 1 :
 ```bash
 chmod +x create_ins.sh && ./create_ins.sh
 ```
 
 
-## 🧪 Usage Example 2 :
+### 🧪 Usage Example 2 :
 ```bash
 bash ./create_ins.sh
 ```
@@ -50,13 +50,13 @@ bash ./create_ins.sh
 # 1. Activate Conda Environment
 # 2. Set VastAI API Key
 # 3. Search for GPU offers with high specs
-# 4. Extract target instance IDs using test.py
+# 4. Extract target instance IDs using filter_data.py
 # 5. Create instances and log details
 ```
 
 
-# 🔒 Security Note
-## ⚠️ Do not hardcode your VastAI API key in production environments.
+## 🔒 Security Note
+⚠️ Do not hardcode your VastAI API key in production environments.
 Use environment variables or secure vaults when possible.
 ```bash
 export VAST_API_KEY=your_api_key_here
@@ -67,7 +67,7 @@ vastai set api-key $VAST_API_KEY
 ## 📁 File Structure
 ```bash
 ├── create_ins.sh     # Main automation script
-├── test.py                   # Custom logic to parse VastAI offers
+├── filter_data.py                   # Custom logic to parse VastAI offers
 ├── vastai_output.txt         # Output file from search
 └── README.md                 # This file
 
