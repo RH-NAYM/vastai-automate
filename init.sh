@@ -6,7 +6,7 @@ set -e  # Exit on any error
 source ~/miniconda3/bin/activate 
 
 # Set API key for VastAI
-vastai set api-key 4324b414f517f1c06c87f991c5b90a3ceda4295b3908bab7d89277a44044143c
+vastai set api-key <api_key>
 
 # Search for available offers and save output
 vastai search offers "reliability>0.98 cpu_cores>60 num_gpus=1 gpu_ram>15 gpu_ram<26 rented=False inet_down>300 inet_up>300 disk_space>10" > vastai_output.txt

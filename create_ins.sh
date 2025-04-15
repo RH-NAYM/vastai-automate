@@ -7,11 +7,11 @@ source ~/miniconda3/bin/activate
 
 
 # Set API key for VastAI
-vastai set api-key 4324b414f517f1c06c87f991c5b90a3ceda4295b3908bab7d89277a44044143c
+vastai set api-key <api_key>
 
 # Search for available offers and save output
 vastai search offers "reliability>0.98 cpu_cores>70 num_gpus=1 gpu_ram>15 rented=False inet_down>300 inet_up>300 disk_space>12" > vastai_output.txt
-ids=$(python test.py)
+ids=$(python filter_data.py)
 
 echo "Target Instance IDs: $ids"
 
@@ -22,7 +22,7 @@ for id in $ids; do
     echo "Creating instance: $id"
     
     # Create instance
-    instance_info=$(vastai create instance $id --image pytorch/pytorch --disk 16 --jupyter --direct --raw 2>&1)
+    instance_info=$(vastai create instance $id --image pytorch/pytorch --disk 12 --jupyter --direct --raw 2>&1)
     echo "Instance creation output: $instance_info"
     
     # Extract instance ID
