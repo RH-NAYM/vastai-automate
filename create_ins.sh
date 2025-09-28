@@ -16,7 +16,7 @@ if command -v conda &> /dev/null; then
 fi
 
 # Set API key for VastAI
-vastai set api-key 4324b414f517f1c06c87f991c5b90a3ceda4295b3908bab7d89277a44044143c
+vastai set api-key <api key>
 
 # --- SEARCH AND FILTER ---
 
